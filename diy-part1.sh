@@ -15,3 +15,6 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+dl luci-app-jd-dailybonus-master
+#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+sed -i '$a src-git dailybonus https://github.com/jerrykuku/luci-app-jd-dailybonus' package/lean
