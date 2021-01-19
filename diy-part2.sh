@@ -12,6 +12,8 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+echo '添加软件源'
+git clone https://github.com/liuran001/openwrt-packages package
 
 echo '修改机器名称'
 sed -i 's/OpenWrt/G-DOCK/g' package/base-files/files/bin/config_generate
@@ -27,4 +29,5 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 
 echo '修改wifi名称'
 sed -i 's/OpenWrt/G-DOCK/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
 
