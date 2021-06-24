@@ -14,6 +14,8 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 echo 'JD添加软件源'
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package
+
+git clone https://github.com/fw876/helloworld package
 #echo '添加软件源'
 #git clone https://github.com/liuran001/openwrt-packages package
 
