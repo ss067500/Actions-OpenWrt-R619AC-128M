@@ -33,6 +33,7 @@ sed -i 's/config internal themes/config internal themes\n    option Argon  \"\/l
 
 echo '去除默认bootstrap主题'
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
+
 # 添加新的主题包
 # git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 # git clone https://github.com/sypopo/luci-theme-atmaterial.git package/lean/luci-theme-atmaterial
@@ -44,6 +45,9 @@ git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/lean/lu
 
 echo '修改wifi名称'
 sed -i 's/OpenWrt/G-DOCK/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#
+# 20220501
+# 
 
 
 
