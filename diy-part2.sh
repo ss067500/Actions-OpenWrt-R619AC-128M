@@ -13,9 +13,6 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
-#echo 'JD添加软件源'
-#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/lean/luci-app-jd-dailybonus
-
 echo '下载helloworld'
 git clone https://github.com/fw876/helloworld package/lean/helloworld
 
@@ -34,20 +31,11 @@ sed -i 's/config internal themes/config internal themes\n    option Argon  \"\/l
 echo '去除默认bootstrap主题'
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
-# 添加新的主题包
-# git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
-# git clone https://github.com/sypopo/luci-theme-atmaterial.git package/lean/luci-theme-atmaterial
-# git clone https://github.com/sypopo/luci-theme-argon-mc.git package/lean/luci-theme-argon-mc
-git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/lean/luci-theme-opentomcat
-# git clone https://github.com/garypang13/luci-theme-edge.git package/lean/luci-theme-edge
-# 更新
-# ./scripts/feeds update -a && ./scripts/feeds install -a
-
 echo '修改wifi名称'
 sed -i 's/OpenWrt/G-DOCK/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-#
-# 20220501
-# 
+
+
+
 
 
 
