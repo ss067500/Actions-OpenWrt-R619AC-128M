@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt-lede-20220501
+name: Build OpenWrt-lede-测试
 on:
   repository_dispatch:
   workflow_dispatch:
