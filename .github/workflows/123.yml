@@ -34,7 +34,7 @@ env:
 
 jobs:
   build:
-    runs-on: Debian-Bullseye
+    runs-on: ubuntu-2204
 
     steps:
     - name: Checkout
