@@ -10,7 +10,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 echo '下载helloworld-补丁'
-git https://codeload.github.com/zfl9/ipt2socks/tar.gz/v1.1.3?/ipt2socks-1.1.3.tar.gz openwrt/dl
+wgit https://codeload.github.com/zfl9/ipt2socks/tar.gz/v1.1.3?/ipt2socks-1.1.3.tar.gz openwrt/dl
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 #echo '下载helloworld'
