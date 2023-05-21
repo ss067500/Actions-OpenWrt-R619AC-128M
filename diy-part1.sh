@@ -20,12 +20,12 @@
 #sed -i "/helloworld/d" "feeds.conf.default"
 #echo 'src-git helloworld https://github.com/fw876/helloworld.git'>> feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >> feeds.conf.default
-##echo 'src-git kenzok https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
-##echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
+echo 'src-git kenzok https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
+echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
 #sed -i '$a src-git Aibx https://github.com/Aibx/openwrt-packages' feeds.conf.default
 
 #Add DDNSTO
-#echo >> feeds.conf.default
-#echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
-#echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
-echo 'src-git okiddin9 https://github.com/kiddin9/openwrt-packages' >> feeds.conf.default
+# echo >> feeds.conf.default
+# echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
+# echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
+# echo 'src-git okiddin9 https://github.com/kiddin9/openwrt-packages' >> feeds.conf.default
