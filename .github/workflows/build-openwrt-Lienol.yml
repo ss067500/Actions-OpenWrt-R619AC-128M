@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt-Lienol
+name: Build OpenWrt-immwrt
 
 on:
   repository_dispatch:
