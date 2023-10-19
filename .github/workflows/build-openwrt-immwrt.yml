@@ -25,7 +25,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-23.05
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: imm.config
+  CONFIG_FILE: imm-jdy.config
   DIY_P1_SH: imm-diy1.sh
   DIY_P2_SH: imm-diy2.sh
   UPLOAD_BIN_DIR: true
@@ -37,7 +37,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
