@@ -9,7 +9,6 @@
 #
 
 name: Build OpenWrt-immortalwrt
-
 on:
   repository_dispatch:
   workflow_dispatch:
